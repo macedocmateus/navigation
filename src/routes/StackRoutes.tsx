@@ -3,7 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Home } from '@/app/Home';
 import { Product } from '@/app/Product';
 
-const Stack = createNativeStackNavigator();
+export type StackRoutesList = {
+    home: undefined;
+    product: undefined;
+};
+
+const Stack = createNativeStackNavigator<StackRoutesList>();
 
 export function StackRoutes() {
     return (
@@ -12,7 +17,7 @@ export function StackRoutes() {
             screenOptions={{ headerShown: false }}
         >
             <Stack.Screen name="home" component={Home} />
-            <Stack.Screen name="Product" component={Product} />
+            <Stack.Screen name="product" component={Product} />
         </Stack.Navigator>
     );
 }
