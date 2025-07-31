@@ -12,7 +12,7 @@ export function Home() {
                 <Title>Home</Title>
                 <ButtonIcon
                     name="add-circle"
-                    onPress={() => navigation.navigate('Product')}
+                    onPress={() => navigation.navigate('product')}
                 />
             </Header>
         </View>
