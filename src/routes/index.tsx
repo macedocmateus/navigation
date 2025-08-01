@@ -1,11 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { BottomRoutes } from './BottomRoutes';
-import { StackRoutes } from './StackRoutes';
+import { BottomRoutes } from '@/routes/BottomRoutes';
+import { DrawerRoutes } from '@/routes/DrawerRoutes';
+import { StackRoutes } from '@/routes/StackRoutes';
 
 export function Routes() {
     return (
         <NavigationContainer>
-            <BottomRoutes />
+            <DrawerRoutes />
         </NavigationContainer>
     );
 }
